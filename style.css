@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    color: #333333;
+}
+
+header {
+    background-color: #f7ead2;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    color: #f5a623;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    list-style: none;
+    margin-left: 16px;
+}
+
+.about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about img {
+    height: 320px;
+    margin-right: 32px;
+}
+
+h2 {
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f5a623;
+    color: #f5a623;
+}
+
+.arrivals {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 4%;
+}
+
+.products img {
+    width: 200px;
+}
+
+.products li {
+    list-style: none;
+}
+
+strong {
+    color: #d88909;
+    margin-left: 8px;;
+}
+
+del {
+    color: #ccc;
+}
+
+.arrivals h2 {
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 2px solid #f5a623;
+}
+
+.arrivals button {
+    margin-top: 16px;
+    padding: 8px 0;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #f5a623;
+    cursor: pointer;
+    border: none;
+}
+
+.arrivals button:hover {
+    background-color: #d88909;
+    transition: ease .5s;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+
+    header>.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .about h2 {
+        margin-top: 24px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .products img {
+        width: 90%;
+    }
+
+    .products li {
+        text-align: center;
+    }
+
+    .about img {
+        height: 100%
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+
+    header>.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .about img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 24px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .products li {
+        text-align: center;
+    }
+
+    .products img {
+        width: 100%;
+    }
+}
